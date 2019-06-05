@@ -1,0 +1,86 @@
+.logo {
+  margin-top: 20px;
+  width: 240px;
+  padding-left: 20px;
+
+  a {
+    padding: 5px 25px;
+    display: block;
+    position: relative;
+
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+    font-size: 32px;
+    width: 87px;
+
+    overflow: hidden;
+    transition: width, ease-out 0.7s;
+
+    &:hover .logo-other{
+      left: 60px;
+    }
+
+    &:hover {
+      width: 220px;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 5px;
+      height: 100%;
+      background-color: #fff;
+      top:0;
+      left: 0px;
+      border-radius: 20px;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 5px;
+      height: 100%;
+      background-color: #fff;
+      top:0;
+      right: 4px;
+      border-radius: 20px;
+    }
+
+    .logo-other {
+      position: absolute;
+      left: 90px;
+      transition: left, ease-out 0.7s;
+    }
+  }
+
+  @media screen and (max-width: 400px){
+    a {
+      font-size: 26px;
+
+      &:before {
+        left: 2px;
+        width: 4px;
+      }
+
+      &:after {
+        right: 10px;
+        width: 4px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px){
+  .logo {
+    padding-left: 7px;
+  }
+}
+
+@media screen and (max-width: 333px){
+  .logo {
+    padding-left: 0px;
+  }
+}
+

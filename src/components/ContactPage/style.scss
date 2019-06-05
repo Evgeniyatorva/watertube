@@ -1,0 +1,45 @@
+.contact-page {
+  margin-top: 290px;
+  margin-bottom: 270px;
+  width: 100%;
+  @media screen and (max-width: 545px){
+    margin-bottom: 140px;    
+    margin-top: 130px;
+  }
+
+  .contact-page-text {
+    width: 100%;
+    display: block;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 30px;
+    line-height: 56px;
+    letter-spacing: 10px;
+    color: #222;
+    font-weight: 300;
+    text-align: center;
+    padding-left: 4%;
+    padding-right: 4%;
+    @media screen and (max-width: 433px){
+      font-size: 26px;
+      line-height: 50px;
+    }
+
+    span {
+      font-size: 37px;
+      font-weight: 500;
+      white-space: nowrap;
+      @media screen and (max-width: 596px){
+        font-size: 30px;
+      }
+      @media screen and (max-width: 521px){
+        letter-spacing: 4px;
+      }
+      @media screen and (max-width: 412px){
+        letter-spacing: 4px;
+        font-size: 20px;
+        text-decoration: underline;
+
+      }
+    }
+  }
+}

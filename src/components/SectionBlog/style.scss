@@ -1,0 +1,69 @@
+.section-blog {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;  
+}
+
+.section-blog-title-wrap {
+  width: 100%;
+
+  .blog-title {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 33px;
+    line-height: 38px;
+    color: #222;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+
+    margin-top: 35px;
+
+    margin-bottom: 115px;
+    
+  }
+  @media screen and (max-width: 660px){ 
+    .blog-title {
+      margin-top: 80px;
+      margin-bottom: 100px;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  }
+}
+
+.blog-big {
+  width: 50%;
+}
+
+@media screen and (max-width: 773px){ 
+  .blog-big {
+    width: 100%;
+  }
+}
+
+.blog-little {
+  width: 33.33%;
+}
+
+@media screen and (max-width: 773px){ 
+  .blog-little {
+    width: 100%;
+  }
+}
+
+.section-blog-btn-wrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  margin-bottom: 100px;
+  .section-blog-btn{
+    font-size: 24px;
+    line-height: 32px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    color: #222;
+    padding: 8px 13px;
+  }
+}

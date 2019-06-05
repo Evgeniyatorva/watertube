@@ -1,0 +1,31 @@
+.header-logo {
+  width: 13%;
+}
+
+.header-phone {
+  width: 74%;
+}
+
+.header-menu {
+  width: 13%;
+}
+
+.header-background {
+  width: 100%;
+  padding: 0px 15px 20px;
+  transition: background-color, ease-out 0.7s;
+}
+
+@media screen and (max-width: 333px){
+  .header-background {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+.header-background-scroll-true {
+  background-color: rgba(34, 34, 34, 0.6);
+}
+
+.header-background-scroll-false {
+  background-color: transparent;
+}

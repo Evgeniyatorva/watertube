@@ -1,0 +1,46 @@
+.section-partners-title {
+  text-align: center;
+  display: block;
+  width: 100%;
+  h3 {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 33px;
+    line-height: 49px;
+    color: #222;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    font-weight: 300;
+
+    padding-left: 5%;
+    padding-right: 5%;
+
+    margin-bottom: 68px;
+  }  
+  @media screen and (max-width: 344px){ 
+    h3{
+      padding-left: 2%;
+    padding-right: 2%;
+    }
+    
+  }
+}
+
+.section-partners-item {
+  display: block;
+  text-align: center;
+
+  margin-bottom: 110px;
+  
+  img {
+    margin: 20px 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    opacity: 0;
+  }
+  @media screen and (max-width: 660px){ 
+    img {
+      opacity: 1;
+    }   
+  }
+}

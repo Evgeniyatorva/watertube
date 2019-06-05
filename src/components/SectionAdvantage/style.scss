@@ -1,0 +1,26 @@
+.advantage {
+  width: 100%;
+  margin-bottom: 0px;
+
+  .advantage-title {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 33px;
+    line-height: 48px;
+    color: #222;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+
+    margin-top: 105px;
+
+    margin-bottom: 138px;
+  }
+  @media screen and (max-width: 660px){ 
+    .advantage-title {
+      margin-top: 80px;
+      margin-bottom: 100px;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.main-title {
+  position: absolute;
+  top: calc(50% - 11vh);
+  left: 0;
+  right: 0;
+  padding-left:5%; 
+  padding-right:5%; 
+
+  
+
+  h1 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 110px;
+    font-weight: 400;
+    color: #fff;
+    background-color: rgba(34, 34, 34, 0.3);
+    padding: 10px 40px 15px;
+    margin: 0;
+    text-align: center;
+    word-spacing: -30px;
+  }
+  @media screen and (max-width: 1243px){
+    h1 {
+      font-size: 70px;
+      word-spacing: -20px;
+
+    }
+  }
+
+  @media screen and (max-width: 823px){
+    h1 {
+      font-size: 45px;
+      word-spacing: -10px;
+
+    }
+  }
+}

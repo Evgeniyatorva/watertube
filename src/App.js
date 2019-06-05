@@ -1,26 +1,34 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route, Switch } from "react-router-dom";
+
+import Main from './components/Main';
+import AboutPage from './components/AboutPage';
+import BlogPage from './components/BlogPage';
+import BlogArticle from './components/BlogArticle';
+import ContactPage from './components/ContactPage';
+
+import ScrollToTop from './container/ScrollToTop';
+
+import './App.scss';
+
+// fix bug in gsap. Not working animation. Need activate  CSSPlugin
+import CSSPlugin from 'gsap/CSSPlugin';
+const C = CSSPlugin;
 
 class App extends Component {
+   
   render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+    console.log(C);
+    return (      
+      <Switch>
+        <ScrollToTop>
+          <Route exact path="/" component={Main} />
+          <Route exact path="/about" component={AboutPage} />
+          <Route exact path="/blog" component={BlogPage} />
+          <Route path="/blog/:id" component={BlogArticle}/>
+          <Route path="/contact" component={ContactPage}/>
+        </ScrollToTop>        
+      </Switch>      
     );
   }
 }

@@ -1,0 +1,60 @@
+.blog-article {
+
+  .blog-article-image-wrapper {
+    max-height: 450px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin-bottom: 60px;
+
+    .blog-article-image {
+      width: 100%;
+      @media screen and (max-width: 380px){
+        margin-top: 79px;
+      }
+    }
+    
+    .blog-article-title {
+      font-family: 'Comfortaa', sans-serif;
+      font-size: 36px;
+      line-height: 45px;
+      text-align: center;
+      color: #fff;
+      font-weight: 300;
+      text-transform: uppercase;
+
+      position: absolute;
+      top: calc(50% - 40px);      
+      width: 100%;
+      background-color: rgba(34, 34, 34, 0.5);
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 4%;
+      padding-right: 4%;
+      @media screen and (max-width: 696px){
+        font-size: 27px;
+        line-height: 36px;
+      }
+      @media screen and (max-width: 416px){
+        font-size: 24px;
+        line-height: 32px;
+      }
+
+    }    
+  }  
+  .blog-article-text {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    line-height: 31px;
+    color: #222;
+    font-weight: 300;
+
+    padding-left: 25%;
+    padding-right: 25%;
+    @media screen and (max-width: 1136px){
+      padding-left: 10%;
+      padding-right: 10%;
+    }    
+  }
+}
+

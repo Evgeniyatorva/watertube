@@ -1,0 +1,29 @@
+.letter-wrap {
+  position: absolute;
+  top: -160px;
+  left: -90px;
+}
+
+.letter-C {
+  width: 400px;
+  fill: none;
+
+  path {
+    stroke-miterlimit:10;
+    stroke:#000000;
+    opacity: 0.13;
+    stroke-width: 1px;
+    stroke-dasharray: 1070;
+  stroke-dashoffset: 2142;
+  animation: dash 5s linear;
+  }
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1070;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}

@@ -1,0 +1,14 @@
+.container-accordion {
+  min-height: 100%;
+  padding: 30px;
+  font-family: 'Comfortaa', sans-serif;
+  text-align: center;
+}
+
+.accordion {
+  margin: 0 auto;
+  width: 80%;
+  @media screen and (max-width: 660px){
+   width: 100%; 
+  }
+}
