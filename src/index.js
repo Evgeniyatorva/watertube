@@ -1,7 +1,9 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+//import ReactDOM from 'react-dom';
+
+// Pre-Rendering
+import { render } from 'react-snapshot';
 import './index.css';
 import App from './App';
-import { BrowserRouter } from "react-router-dom";
 
-ReactDOM.render(<BrowserRouter><App /></BrowserRouter>, document.getElementById('root'));
+render(<App />, document.getElementById('root'));

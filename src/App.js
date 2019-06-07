@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Switch } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
 import Main from './components/Main';
 import AboutPage from './components/AboutPage';
@@ -20,15 +21,17 @@ class App extends Component {
   render() {
     console.log(C);
     return (      
-      <Switch>
-        <ScrollToTop>
-          <Route exact path="/" component={Main} />
-          <Route exact path="/about" component={AboutPage} />
-          <Route exact path="/blog" component={BlogPage} />
-          <Route path="/blog/:id" component={BlogArticle}/>
-          <Route path="/contact" component={ContactPage}/>
-        </ScrollToTop>        
-      </Switch>      
+      <BrowserRouter>
+        <Switch>
+          <ScrollToTop>
+            <Route exact path="/" component={Main} />
+            <Route exact path="/about" component={AboutPage} />
+            <Route exact path="/blog" component={BlogPage} />
+            <Route path="/blog/:id" component={BlogArticle}/>
+            <Route path="/contact" component={ContactPage}/>
+          </ScrollToTop>        
+        </Switch>
+      </BrowserRouter>      
     );
   }
 }
