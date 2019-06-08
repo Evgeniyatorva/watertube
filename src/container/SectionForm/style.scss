@@ -136,6 +136,7 @@
     }
 
     .form-social {
+      position: relative;
       @media screen and (max-width: 1200px){
         margin-bottom: 20px;
       }
@@ -150,7 +151,7 @@
 
       a {
         display: inline-block;
-        margin-right: 10px;;
+        vertical-align: middle;
       }
       .first-icon {
         margin-left: -8px;

@@ -70,16 +70,16 @@ class SectionForm extends Component {
                 <div className="section-form-right-top-before" ref={(sectionTop) => this.sectionTop = sectionTop}></div>
                 <div className="form-tel">
                   <h4 className="form-tel-title">Наши контактные телефоны</h4>
-                  <a href='/'>+375 (44) 765-43-36</a>
-                  <a href='/'>+375 (44) 765-43-36</a>
+                  <a href="tel:+375447654336">+375 (44) 765-43-36</a>
+                  <a href="tel:+375257944159">+375 (25) 794-41-59</a>
                 </div>
                 <div className="form-social">
                   <h4 className="form-social-title">Мы в соц. сетях</h4>
-                  <a className="first-icon" href="/"><this.InstagramIcon/></a>
-                  <a href="/"><this.YoutubeIcon/></a>
-                  <a href="/"><this.FacebookIcon/></a>
-                  <a href="/"><this.VkontaktIcon/></a>
-                  <a href="/"><this.TwitterIcon/></a>
+                  {/* <a  href="/"><this.InstagramIcon/></a>
+                  <a href="https://vk.com/club117306379"><this.YoutubeIcon/></a> */}
+                  <a className="first-icon" href="https://www.facebook.com/groups/177021456180204/"><this.FacebookIcon/></a>
+                  <a href="https://vk.com/club117306379"><this.VkontaktIcon/></a>
+                  {/* <a href="/"><this.TwitterIcon/></a> */}
                 </div>                
               </div>
               <div className="section-form-right-bottom">
