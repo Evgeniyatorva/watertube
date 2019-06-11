@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 
 import './style.scss';
 
@@ -11,7 +12,10 @@ class Form extends Component {
       name: '',
       tel: ''
     }
+
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
+
 
   handleChange = (e) => {
     this.setState({
@@ -20,10 +24,15 @@ class Form extends Component {
     console.log(this.state.name)
   }
 
-  handleSubmit = (e) => {
+  async handleSubmit(e) {
     e.preventDefault()
 
-    console.log(e)
+    const { name, tel } = this.state;
+
+    const form = await axios.post('/api/form', {
+      name,
+      tel
+    })
   }
 
   render() {
@@ -31,7 +40,7 @@ class Form extends Component {
       <form className="form" onSubmit={this.handleSubmit} >
         <h4 className="form-callback-title">Связаться с нами</h4>
         <input type="text" name='name' placeholder="Ваше имя" value={this.state.name} onChange={this.handleChange} required />
-        <input type="text" name='tel' placeholder="Ваш номер телефона" value={this.state.tel} onChange={this.handleChange} required />
+        <input type="tel" name='tel' placeholder="Ваш номер телефона" value={this.state.tel} onChange={this.handleChange} required />
         <input type="submit" value="Отправить"/>
       </form> 
     )
