@@ -3,7 +3,7 @@
   background-color: #222;
   padding: 3% 0% 5%;
 
-  margin-bottom: 50px;
+  margin-bottom: 0px;
   @media screen and (max-width: 1200px){
     width: 100%;
     margin-bottom: 0;
@@ -69,10 +69,12 @@
 .section-form-right {
   width: 50%;
 
-  margin-bottom: 50px;
+  margin-bottom: 0px;
   position: relative;
   @media screen and (max-width: 1200px){
     width: 100%;
+    margin-bottom: 50px;
+
   }
 
   .section-form-right-top-before {
@@ -97,7 +99,7 @@
     }
     @media screen and (max-width: 1200px){
       padding: 5% 8%;
-      height: 60%;
+      height: 70%;
     }
     @media screen and (max-width: 347px){
       padding: 5% 4%;

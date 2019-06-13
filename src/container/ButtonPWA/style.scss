@@ -1,0 +1,23 @@
+.PWA-btn-wrapper {
+  margin-top: 104px;
+  @media screen and (max-width: 1200px){
+    margin-top: 60px;
+
+  }
+  .PWA-btn {
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 6px 9px;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    outline: none;
+
+    cursor: pointer;    
+  }
+}
+
+.PWA-btn-wrapper-display-none {
+  display: none;
+}
