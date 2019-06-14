@@ -32,12 +32,15 @@ class SectionForm extends Component {
   handleChange = (event, unobserve) => {
 
     if (event.isIntersecting ) {
-      this.tl.fromTo(this.title, 0.7, {y: 100, opacity: 0}, {y: 0, opacity: 1}, '+=0.3')
-           .fromTo(this.videoBefore, 1.3, {left: 0, width: '100%'}, {left: '100%', width: '0%'})
-           .fromTo(this.link, 0.8, {opacity: 0}, {opacity: 1}, '-=0.1')
-           .fromTo(this.sectionTop, 0.8, {left: '4%', width: '91%'}, {left: '95%', width: '0%'}, '-=0.5')
-           .fromTo(this.sectionBottom, 0.8, {left: '4%', width: '91%'}, {left: '95%', width: '0%'}, '-=0.5')
-      unobserve();
+      if (event.isIntersecting && window.innerWidth > 1200) {
+        this.tl.fromTo(this.title, 0.7, {y: 100, opacity: 0}, {y: 0, opacity: 1}, '+=0.3')
+            .fromTo(this.videoBefore, 1.3, {left: 0, width: '100%'}, {left: '100%', width: '0%'})
+            .fromTo(this.link, 0.8, {opacity: 0}, {opacity: 1}, '-=0.1')
+            .fromTo(this.sectionTop, 0.8, {left: '4%', width: '91%'}, {left: '95%', width: '0%'}, '-=0.5')
+            .fromTo(this.sectionBottom, 0.8, {left: '4%', width: '91%'}, {left: '95%', width: '0%'}, '-=0.5')
+        unobserve();   
+      }
+      
     }   
   }
 

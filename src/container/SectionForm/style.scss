@@ -12,6 +12,9 @@
   
   .our-team-wrap {
     overflow: hidden;
+    @media screen and (max-width: 1200px){
+      
+    }
   }
 
   .our-team {
@@ -29,6 +32,9 @@
     @media screen and (max-width: 1327px){
       font-size: 32px;
     }
+    @media screen and (max-width: 1200px){
+      opacity: 1;
+    }
   }
 
   .video-form-wrap {
@@ -41,6 +47,9 @@
     background-color: #222;
     position: absolute;
     z-index: 100;
+    @media screen and (max-width: 1200px){
+      display: none;
+    }
   }
   
   .video-form {
@@ -84,8 +93,10 @@
     background-color: #343434;
     z-index: 100;
     @media screen and (max-width: 1490px){
-      height: 47%;
-      
+      height: 47%;      
+    }
+    @media screen and (max-width: 1200px){
+      display: none;
     }
   }
 
@@ -167,6 +178,9 @@
     position: absolute;
     background-color: #474747;
     z-index: 100;
+    @media screen and (max-width: 1200px){
+      display: none;
+    }
   }
 
   .section-form-right-bottom {
